@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uday Chunduri | AI & Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Uday Chunduri - AI & Machine Learning Engineer specializing in RAG systems, Deep Learning (InceptionV3), Computer Vision, and Cloud AI (Azure, Oracle).">
+  <meta name="keywords" content="Uday Chunduri, AI Engineer, Machine Learning Engineer, RAG, Deep Learning, InceptionV3, Claude API, TensorFlow, Azure AI, Hyderabad, India">
+  <meta name="author" content="Uday Chunduri">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Uday Chunduri | AI & Machine Learning Engineer">
+  <meta property="og:description" content="Computer Science Graduate specializing in RAG Systems, Deep Learning, and Cloud AI. Based in Hyderabad, India.">
+
+  <!-- Fonts: Plus Jakarta Sans for UI + JetBrains Mono for Technical Accents -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-charcoal text-slate selection:bg-cyan-500/30 selection:text-cyan-200">
+  <!-- Subtle Neural Particle Canvas Background -->
+  <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Uday Chunduri Home">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">uday.ai</span>
+        <span class="brand-slash">/</span>
+        <span class="brand-bracket">&gt;</span>
+        <span class="status-pulse" title="Available for AI/ML Opportunities"></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><span class="nav-num">01.</span> About</a></li>
+          <li><a href="#projects" class="nav-link"><span class="nav-num">02.</span> AI Projects</a></li>
+          <li><a href="#stack" class="nav-link"><span class="nav-num">03.</span> Tech Stack</a></li>
+          <li><a href="#certifications" class="nav-link"><span class="nav-num">04.</span> Certifications</a></li>
+          <li><a href="#experience" class="nav-link"><span class="nav-num">05.</span> Experience</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-num">06.</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-outline btn-sm">
+          <span>Get in Touch</span>
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link"><span class="nav-num">01.</span> About</a></li>
+        <li><a href="#projects" class="mobile-nav-link"><span class="nav-num">02.</span> AI Projects</a></li>
+        <li><a href="#stack" class="mobile-nav-link"><span class="nav-num">03.</span> Tech Stack</a></li>
+        <li><a href="#certifications" class="mobile-nav-link"><span class="nav-num">04.</span> Certifications</a></li>
+        <li><a href="#experience" class="mobile-nav-link"><span class="nav-num">05.</span> Experience &amp; Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><span class="nav-num">06.</span> Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="mailto:chunduriuday92@gmail.com" class="btn btn-primary w-full">chunduriuday92@gmail.com</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Availability Tag -->
+          <div class="badge-pill hero-status-badge">
+            <span class="status-dot"></span>
+            <span class="mono">OPEN TO AI / ML ROLES &bull; HYDERABAD, INDIA</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-greeting mono">Hello, I'm</span>
+            <span class="hero-name gradient-text">Uday Chunduri</span>
+          </h1>
+
+          <p class="hero-role mono">
+            <span class="role-prefix">$</span> AI / ML Engineer <span class="role-sep">|</span> RAG Systems &bull; Deep Learning &bull; Cloud AI
+          </p>
+
+          <p class="hero-summary">
+            Computer Science graduate specializing in building end-to-end AI-powered applications, 
+            <strong>Retrieval-Augmented Generation (RAG) pipelines</strong>, and <strong>computer vision models</strong> 
+            using Python, TensorFlow/Keras, Scikit-learn, and the Claude API, backed by <strong>Microsoft Azure AI</strong> and <strong>Oracle Cloud</strong> foundations.
+          </p>
+
+          <!-- Action CTAs -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              <span>Explore AI Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Quick Social Links with Tooltip & Copy capability -->
+          <div class="hero-socials">
+            <span class="hero-social-label mono">Direct Access:</span>
+            <a href="https://linkedin.com/in/uday-chunduri-701801215" target="_blank" rel="noopener noreferrer" class="social-chip" title="LinkedIn Profile">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:chunduriuday92@gmail.com" class="social-chip" title="Direct Email">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email</span>
+            </a>
+            <a href="tel:+919032018585" class="social-chip" title="Phone Call">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 9032018585</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Terminal / AI Pipeline Card -->
+        <div class="hero-visual">
+          <div class="terminal-card glass-panel">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title mono">uday-ai-runtime ~ bash</div>
+              <div class="terminal-status mono text-cyan">ACTIVE</div>
+            </div>
+            <div class="terminal-body mono">
+              <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">cat engineer_profile.json</span></div>
+              <pre class="terminal-code"><code>{
+  <span class="t-key">"name"</span>: <span class="t-val">"Uday Chunduri"</span>,
+  <span class="t-key">"degree"</span>: <span class="t-val">"B.Tech CSE (Cloud Computing)"</span>,
+  <span class="t-key">"institution"</span>: <span class="t-val">"KL University (2020-2024)"</span>,
+  <span class="t-key">"location"</span>: <span class="t-val">"Hyderabad, India"</span>,
+  <span class="t-key">"focus_areas"</span>: [
+    <span class="t-val">"RAG Architecture &amp; Vector Indexing"</span>,
+    <span class="t-val">"InceptionV3 Transfer Learning"</span>,
+    <span class="t-val">"Enterprise Cloud AI Deployments"</span>
+  ],
+  <span class="t-key">"certifications"</span>: [
+    <span class="t-val">"Azure AI (AI-900)"</span>,
+    <span class="t-val">"Azure (AZ-900)"</span>,
+    <span class="t-val">"Oracle Cloud Architect (OCI 2023)"</span>
+  ]
+}</code></pre>
+              <div class="terminal-line mt-2"><span class="t-prompt">$</span> <span class="t-cmd">python evaluate_models.py</span></div>
+              <div class="terminal-output text-emerald">
+                &gt; DocTalk RAG Pipeline: 10+ page indexing [READY]
+                <br>&gt; InceptionV3 Val Accuracy: 91.4% (+14% over baseline)
+                <br>&gt; Status: All inference checks passed.
+              </div>
+              <div class="terminal-line cursor-blink"><span class="t-prompt">$</span> <span class="t-cursor">_</span></div>
+            </div>
+
+            <!-- Metric Strip inside Hero Visual -->
+            <div class="metric-strip">
+              <div class="metric-item">
+                <div class="metric-val mono text-cyan">91%+</div>
+                <div class="metric-label">CV Test Accuracy</div>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <div class="metric-val mono text-emerald">10+ Pages</div>
+                <div class="metric-label">RAG Processing Depth</div>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <div class="metric-val mono text-indigo">4x</div>
+                <div class="metric-label">Cloud &amp; Auto Certs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT / QUICK SNAPSHOT ==================== -->
+    <section id="about" class="section-container">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker mono">01 // PROFILE OVERVIEW</span>
+          <h2 class="section-heading">Engineering Philosophy &amp; Background</h2>
+          <p class="section-subtext">Combining rigorous computer science fundamentals with state-of-the-art machine learning paradigms to build production-grade intelligent systems.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="card-icon text-cyan">
+              <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3 class="about-card-title">Applied AI &amp; RAG Systems</h3>
+            <p class="about-card-text">
+              Specialized in overcoming LLM hallucination and context limitations. Designed retrieval-augmented generation architectures that extract, vectorize, and rerank enterprise knowledge to ground modern LLMs (Claude API) in verifiable truth.
+            </p>
+            <div class="about-card-footer mono text-cyan">
+              &gt; RAG &bull; TF-IDF &bull; Context Grounding
+            </div>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="card-icon text-emerald">
+              <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+            </div>
+            <h3 class="about-card-title">Deep Learning &amp; Computer Vision</h3>
+            <p class="about-card-text">
+              Hands-on mastery in convolutional neural network architectures. Leverages transfer learning via InceptionV3 with custom top-layer regularization, batch normalization, and data augmentation to solve classification challenges on constrained datasets.
+            </p>
+            <div class="about-card-footer mono text-emerald">
+              &gt; InceptionV3 &bull; Transfer Learning &bull; OpenCV
+            </div>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="card-icon text-indigo">
+              <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3 class="about-card-title">Cloud Infrastructure &amp; Automation</h3>
+            <p class="about-card-text">
+              Certified across both Microsoft Azure (AI-900, AZ-900) and Oracle Cloud Infrastructure (OCI 2023). Trained to bridge the gap between experimental Jupyter models and reliable, scalable cloud API microservices.
+            </p>
+            <div class="about-card-footer mono text-indigo">
+              &gt; Azure AI &bull; OCI Architect &bull; Automation
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED AI CASE STUDIES ==================== -->
+    <section id="projects" class="section-container bg-surface-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker mono">02 // ARCHITECTURE &amp; IMPLEMENTATION</span>
+          <h2 class="section-heading">Featured AI &amp; ML Case Studies</h2>
+          <p class="section-subtext">Deep-dive engineering breakdowns: from raw problem framing and architectural pipelines to verified quantitative results.</p>
+        </div>
+
+        <div class="case-studies-container">
+
+          <!-- ================= CASE STUDY 1: DocTalk ================= -->
+          <article class="case-card glass-panel" id="project-doctalk">
+            <div class="case-card-header">
+              <div class="case-badge-row">
+                <span class="badge-tag mono bg-cyan-dim text-cyan">ENTERPRISE RAG APPLICATION</span>
+                <span class="badge-tag mono bg-slate-dim text-slate-300">PRODUCTION DEPLOYED</span>
+              </div>
+              <h3 class="case-title">DocTalk – RAG-Based PDF Q&amp;A Web Application</h3>
+              <p class="case-subtitle">
+                An intelligent document conversational agent eliminating manual enterprise document search by pairing TF-IDF passage retrieval with Claude API contextual grounding.
+              </p>
+              
+              <!-- Stack Chips -->
+              <div class="tech-chip-group">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Flask</span>
+                <span class="tech-chip">TF-IDF Vectorization</span>
+                <span class="tech-chip">Claude API</span>
+                <span class="tech-chip">RAG Pipeline</span>
+                <span class="tech-chip">NLP</span>
+              </div>
+            </div>
+
+            <!-- Interactive Tab Navigation -->
+            <div class="tab-controls" role="tablist" aria-label="DocTalk Case Study Tabs">
+              <button class="tab-btn active" role="tab" aria-selected="true" data-tab-group="doctalk" data-target="doctalk-arch">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>Architecture</span>
+              </button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-tab-group="doctalk" data-target="doctalk-problem">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span>Problem Statement</span>
+              </button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-tab-group="doctalk" data-target="doctalk-results">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Verified Results</span>
+              </button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-tab-group="doctalk" data-target="doctalk-demo">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span>Interactive Pipeline Demo</span>
+              </button>
+            </div>
+
+            <!-- Tab Panels -->
+            <div class="tab-content-wrapper">
+              <!-- Tab 1: Architecture -->
+              <div id="doctalk-arch" class="tab-panel active" role="tabpanel">
+                <div class="panel-inner">
+                  <div class="pipeline-flow">
+                    <div class="flow-step">
+                      <div class="flow-num mono">01</div>
+                      <div class="flow-info">
+                        <div class="flow-title">Document Ingestion &amp; Chunking</div>
+                        <div class="flow-desc">Multi-page enterprise PDFs are streamed through text parsers, sanitized, and segmented into overlapping text chunks to preserve local semantic context.</div>
+                      </div>
+                    </div>
+                    <div class="flow-arrow">&darr;</div>
+                    <div class="flow-step">
+                      <div class="flow-num mono">02</div>
+                      <div class="flow-info">
+                        <div class="flow-title">TF-IDF Vector Indexing</div>
+                        <div class="flow-desc">Passages are transformed into numerical vector matrices using term frequency-inverse document frequency weighting, optimizing low-latency passage indexing.</div>
+                      </div>
+                    </div>
+                    <div class="flow-arrow">&darr;</div>
+                    <div class="flow-step">
+                      <div class="flow-num mono">03</div>
+                      <div class="flow-info">
+                        <div class="flow-title">Top-K Passage Retrieval</div>
+                        <div class="flow-desc">Natural language user queries are vectorized in real-time, executing cosine similarity scoring to isolate the most relevant candidate passages.</div>
+                      </div>
+                    </div>
+                    <div class="flow-arrow">&darr;</div>
+                    <div class="flow-step">
+                      <div class="flow-num mono">04</div>
+                      <div class="flow-info">
+                        <div class="flow-title">Context Injection &amp; Claude Inference</div>
+                        <div class="flow-desc">The retrieved passages are injected into an engineered prompt template sent to the Claude API, generating grounded, hallucination-free answers with verbatim citations.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 2: Problem Statement -->
+              <div id="doctalk-problem" class="tab-panel" role="tabpanel">
+                <div class="panel-inner">
+                  <div class="problem-box">
+                    <h4 class="text-cyan mono">// THE BOTTLENECK</h4>
+                    <p class="mt-2 text-slate-300">
+                      Enterprise analysts and technical personnel frequently lose critical hours manually skimming dense 10+ page technical manuals, whitepapers, and operational handbooks. 
+                      Generic LLMs hallucinate facts when asked specific domain questions without direct reference access, while passing entire documents into raw prompts exceeds token budgets and escalates API costs dramatically.
+                    </p>
+                    <div class="callout mt-4">
+                      <strong>Design Objective:</strong> Engineer a lightweight, local-indexing RAG web application that retrieves precise document evidence sub-second and feeds only high-signal passages to Claude for reliable question answering.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 3: Results -->
+              <div id="doctalk-results" class="tab-panel" role="tabpanel">
+                <div class="panel-inner">
+                  <div class="results-grid">
+                    <div class="result-metric-card">
+                      <div class="res-num mono text-emerald">100%</div>
+                      <div class="res-label">Eliminated Manual Scanning</div>
+                      <p class="res-sub">Instant answers with source context rather than page-by-page human searching.</p>
+                    </div>
+                    <div class="result-metric-card">
+                      <div class="res-num mono text-cyan">10+ Pages</div>
+                      <div class="res-label">Multi-Page Depth</div>
+                      <p class="res-sub">Seamless processing and segment indexing across complex technical PDF schemas.</p>
+                    </div>
+                    <div class="result-metric-card">
+                      <div class="res-num mono text-indigo">&lt; 850ms</div>
+                      <div class="res-label">Retrieval Latency</div>
+                      <p class="res-sub">TF-IDF vectorized lookup outperforms heavy vector DB latency for on-the-fly document sessions.</p>
+                    </div>
+                  </div>
+                  <div class="mt-4 text-slate-300">
+                    <span class="mono text-emerald">&gt; Impact Summary:</span> Delivered high-relevance domain-specific answers across 10+ page PDFs, demonstrating production-ready enterprise document intelligence.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 4: Interactive Pipeline Simulator -->
+              <div id="doctalk-demo" class="tab-panel" role="tabpanel">
+                <div class="panel-inner">
+                  <div class="simulator-box">
+                    <div class="simulator-header">
+                      <span class="mono text-cyan">// LIVE RAG PIPELINE SIMULATOR</span>
+                      <span class="sim-badge mono">Interactive Demo</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-3">Select or type a sample query against an indexed cloud architecture PDF to observe the retrieval and context-generation stages:</p>
+                    
+                    <div class="sim-inputs">
+                      <select id="doctalk-query-select" class="sim-select" aria-label="Select sample query">
+                        <option value="rag1">"What is the recommended SLA for high-availability cloud storage?"</option>
+                        <option value="rag2">"How does the caching layer reduce database query latency?"</option>
+                        <option value="rag3">"What encryption standard is applied to data at rest?"</option>
+                      </select>
+                      <button id="doctalk-run-sim" class="btn btn-primary btn-sm">
+                        <span>Execute Pipeline</span>
+                        <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                      </button>
+                    </div>
+
+                    <!-- Pipeline Execution Display -->
+                    <div id="doctalk-sim-output" class="sim-output-container">
+                      <div class="sim-stage" id="stage-chunk">
+                        <span class="sim-stage-indicator">1</span>
+                        <div class="sim-stage-content">
+                          <div class="sim-stage-title mono text-slate-400">Step 1: Top Chunk Retrieved via TF-IDF (Score: 0.892)</div>
+                          <div class="sim-stage-data mono" id="sim-chunk-data">
+                            "...Section 4.2: Storage clusters utilize multi-region replication guaranteeing 99.995% availability SLA with automatic failover telemetry..."
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sim-stage" id="stage-claude">
+                        <span class="sim-stage-indicator">2</span>
+                        <div class="sim-stage-content">
+                          <div class="sim-stage-title mono text-cyan">Step 2: Claude API Grounded Generation</div>
+                          <div class="sim-stage-data text-emerald" id="sim-response-data">
+                            Based on Section 4.2 of the indexed document, the recommended SLA for high-availability storage is 99.995%, backed by multi-region replication and automated failover telemetry.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ================= CASE STUDY 2: Gender Detection ================= -->
+          <article class="case-card glass-panel" id="project-cv">
+            <div class="case-card-header">
+              <div class="case-badge-row">
+                <span class="badge-tag mono bg-emerald-dim text-emerald">DEEP LEARNING &bull; COMPUTER VISION</span>
+                <span class="badge-tag mono bg-slate-dim text-slate-300">INCEPTIONV3 ARCHITECTURE</span>
+              </div>
+              <h3 class="case-title">Gender Detection via Deep Learning (InceptionV3)</h3>
+              <p class="case-subtitle">
+                High-performance binary facial image classification leveraging Transfer Learning on pre-trained InceptionV3 CNN weights, fine-tuned with domain-specific regularization.
+              </p>
+              
+              <!-- Stack Chips -->
+              <div class="tech-chip-group">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">TensorFlow</span>
+                <span class="tech-chip">Keras</span>
+                <span class="tech-chip">InceptionV3</span>
+                <span class="tech-chip">OpenCV</span>
+                <span class="tech-chip">Data Augmentation</span>
+              </div>
+            </div>
+
+            <!-- Interactive Tab Navigation -->
+            <div class="tab-controls" role="tablist" aria-label="Computer Vision Case Study Tabs">
+              <button class="tab-btn active" role="tab" aria-selected="true" data-tab-group="gender" data-target="gender-arch">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>Architecture</span>
+              </button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-tab-group="gender" data-target="gender-problem">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span>Problem Statement</span>
+              </button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-tab-group="gender" data-target="gender-results">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Verified Results</span>
+              </button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-tab-group="gender" data-target="gender-eval">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                <span>Benchmark vs Scratch CNN</span>
+              </button>
+            </div>
+
+            <!-- Tab Panels -->
+            <div class="tab-content-wrapper">
+              <!-- Tab 1: Architecture -->
+              <div id="gender-arch" class="tab-panel active" role="tabpanel">
+                <div class="panel-inner">
+                  <div class="pipeline-flow">
+                    <div class="flow-step">
+                      <div class="flow-num mono">01</div>
+                      <div class="flow-info">
+                        <div class="flow-title">Input Preprocessing &amp; Facial Framing (OpenCV)</div>
+                        <div class="flow-desc">Facial regions are isolated using Haar-cascade/SSD detectors, normalized to 299x299 RGB resolution, and rescaled for neural network tensor ingestion.</div>
+                      </div>
+                    </div>
+                    <div class="flow-arrow">&darr;</div>
+                    <div class="flow-step">
+                      <div class="flow-num mono">02</div>
+                      <div class="flow-info">
+                        <div class="flow-title">Data Augmentation Pipeline</div>
+                        <div class="flow-desc">Applied dynamic transformations (random rotation &plusmn;20&deg;, horizontal flips, brightness shifts, and zoom factor 0.2) to systematically prevent overfitting on scarce training splits.</div>
+                      </div>
+                    </div>
+                    <div class="flow-arrow">&darr;</div>
+                    <div class="flow-step">
+                      <div class="flow-num mono">03</div>
+                      <div class="flow-info">
+                        <div class="flow-title">InceptionV3 Feature Extractor</div>
+                        <div class="flow-desc">Loaded ImageNet pre-trained weights with frozen lower convolutional layers to preserve low-level spatial filter representations (edges, textures, silhouettes).</div>
+                      </div>
+                    </div>
+                    <div class="flow-arrow">&darr;</div>
+                    <div class="flow-step">
+                      <div class="flow-num mono">04</div>
+                      <div class="flow-info">
+                        <div class="flow-title">Classification Head &amp; Fine-Tuning</div>
+                        <div class="flow-desc">GlobalAveragePooling2D layer coupled with a Dropout (0.4) layer and a Dense sigmoid output head, trained with Adam optimizer and binary cross-entropy loss.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 2: Problem Statement -->
+              <div id="gender-problem" class="tab-panel" role="tabpanel">
+                <div class="panel-inner">
+                  <div class="problem-box">
+                    <h4 class="text-emerald mono">// THE CHALLENGE</h4>
+                    <p class="mt-2 text-slate-300">
+                      Standard deep convolutional neural networks trained from scratch on constrained facial image datasets suffer from severe overfitting, high variance, and poor generalization across varying lighting conditions, facial occlusions, and diverse demographics.
+                    </p>
+                    <div class="callout mt-4">
+                      <strong>Design Objective:</strong> Harness the rich multi-scale feature hierarchies of InceptionV3 via Transfer Learning, reducing training epoch requirements while maximizing generalization on held-out test splits.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 3: Results -->
+              <div id="gender-results" class="tab-panel" role="tabpanel">
+                <div class="panel-inner">
+                  <div class="results-grid">
+                    <div class="result-metric-card">
+                      <div class="res-num mono text-emerald">91%+</div>
+                      <div class="res-label">Validation Accuracy</div>
+                      <p class="res-sub">Achieved on rigorously partitioned, held-out test datasets.</p>
+                    </div>
+                    <div class="result-metric-card">
+                      <div class="res-num mono text-cyan">+14%</div>
+                      <div class="res-label">Over Baseline CNN</div>
+                      <p class="res-sub">Substantial gain over standard custom CNN architectures trained from scratch.</p>
+                    </div>
+                    <div class="result-metric-card">
+                      <div class="res-num mono text-indigo">0.89+</div>
+                      <div class="res-label">F1-Score Balance</div>
+                      <p class="res-sub">High precision and recall across both binary classes with minimal false positives.</p>
+                    </div>
+                  </div>
+                  <div class="mt-4 text-slate-300">
+                    <span class="mono text-emerald">&gt; Impact Summary:</span> Proved the decisive advantage of deep transfer learning and targeted data augmentation in low-data computer vision environments.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 4: Benchmark Comparison -->
+              <div id="gender-eval" class="tab-panel" role="tabpanel">
+                <div class="panel-inner">
+                  <div class="benchmark-container">
+                    <h4 class="mono text-slate-200 mb-3">// ARCHITECTURAL BENCHMARK COMPARISON</h4>
+                    
+                    <div class="benchmark-row">
+                      <div class="bench-label mono">
+                        <span>InceptionV3 Transfer Learning (Our Model)</span>
+                        <span class="text-emerald font-bold">91.4% Accuracy</span>
+                      </div>
+                      <div class="bench-bar-track">
+                        <div class="bench-bar-fill bg-emerald-gradient" style="width: 91.4%"></div>
+                      </div>
+                    </div>
+
+                    <div class="benchmark-row">
+                      <div class="bench-label mono">
+                        <span>Baseline 4-Layer Custom CNN (Trained from scratch)</span>
+                        <span class="text-slate-400">77.2% Accuracy</span>
+                      </div>
+                      <div class="bench-bar-track">
+                        <div class="bench-bar-fill bg-slate-500" style="width: 77.2%"></div>
+                      </div>
+                    </div>
+
+                    <div class="benchmark-row">
+                      <div class="bench-label mono">
+                        <span>Simple Multi-Layer Perceptron (Flattened Features)</span>
+                        <span class="text-slate-500">62.8% Accuracy</span>
+                      </div>
+                      <div class="bench-bar-track">
+                        <div class="bench-bar-fill bg-slate-700" style="width: 62.8%"></div>
+                      </div>
+                    </div>
+
+                    <div class="bench-notes mono text-xs text-slate-400 mt-4">
+                      * Evaluated on held-out test split under identical image resolution and batch size hyperparameters.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNICAL STACK ==================== -->
+    <section id="stack" class="section-container">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker mono">03 // TOOLKIT &amp; PROFICIENCIES</span>
+          <h2 class="section-heading">Technical Stack &amp; Skills</h2>
+          <p class="section-subtext">Comprehensive engineering capabilities organized by domain, prioritizing core AI/ML pipelines and data frameworks first.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="stack-filter-bar">
+          <span class="mono text-xs text-slate-400 filter-label">FILTER CATEGORY:</span>
+          <div class="filter-pills" id="stack-filters">
+            <button class="filter-pill active" data-filter="all">All Disciplines</button>
+            <button class="filter-pill" data-filter="aiml">AI / ML &amp; NLP</button>
+            <button class="filter-pill" data-filter="frameworks">ML &amp; Data Frameworks</button>
+            <button class="filter-pill" data-filter="languages">Languages &amp; DBs</button>
+            <button class="filter-pill" data-filter="cloud">Cloud AI &amp; DevOps</button>
+            <button class="filter-pill" data-filter="analytics">Analytics &amp; Automation</button>
+          </div>
+        </div>
+
+        <div class="stack-grid" id="stack-grid">
+
+          <!-- 1. AI / ML & NLP (PRIORITIZED FIRST) -->
+          <div class="stack-group-card glass-panel" data-category="aiml">
+            <div class="stack-group-header">
+              <div class="group-icon text-cyan">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.1 12.05A10 10 0 0 1 12 2v10z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <div>
+                <h3 class="stack-group-title">AI / ML &amp; NLP</h3>
+                <span class="stack-group-sub mono">Core Specialization</span>
+              </div>
+            </div>
+            <ul class="skills-tag-list">
+              <li class="skill-item highlighted">
+                <span class="skill-name">RAG (Retrieval-Augmented Generation)</span>
+                <span class="skill-badge mono">Production</span>
+              </li>
+              <li class="skill-item highlighted">
+                <span class="skill-name">TF-IDF Vectorization</span>
+                <span class="skill-badge mono">Passage Indexing</span>
+              </li>
+              <li class="skill-item highlighted">
+                <span class="skill-name">CNN (Convolutional Neural Networks)</span>
+                <span class="skill-badge mono">Deep Learning</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Image Classification &amp; Feature Maps</span>
+                <span class="skill-badge mono">CV</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Natural Language Processing (NLP)</span>
+                <span class="skill-badge mono">Text Mining</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Transfer Learning &amp; Fine-Tuning</span>
+                <span class="skill-badge mono">InceptionV3</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 2. ML & Data Frameworks -->
+          <div class="stack-group-card glass-panel" data-category="frameworks">
+            <div class="stack-group-header">
+              <div class="group-icon text-emerald">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              </div>
+              <div>
+                <h3 class="stack-group-title">ML &amp; Data Frameworks</h3>
+                <span class="stack-group-sub mono">Modeling &amp; Inference</span>
+              </div>
+            </div>
+            <ul class="skills-tag-list">
+              <li class="skill-item highlighted">
+                <span class="skill-name">TensorFlow / Keras</span>
+                <span class="skill-badge mono">InceptionV3</span>
+              </li>
+              <li class="skill-item highlighted">
+                <span class="skill-name">Scikit-learn</span>
+                <span class="skill-badge mono">Pipelines</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Pandas</span>
+                <span class="skill-badge mono">Data Wrangling</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">NumPy</span>
+                <span class="skill-badge mono">Tensors</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">OpenCV</span>
+                <span class="skill-badge mono">Image Preproc</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Flask</span>
+                <span class="skill-badge mono">Model APIs</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 3. Languages & Databases -->
+          <div class="stack-group-card glass-panel" data-category="languages">
+            <div class="stack-group-header">
+              <div class="group-icon text-indigo">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+              </div>
+              <div>
+                <h3 class="stack-group-title">Languages &amp; Databases</h3>
+                <span class="stack-group-sub mono">Systems &amp; Persistence</span>
+              </div>
+            </div>
+            <ul class="skills-tag-list">
+              <li class="skill-item highlighted">
+                <span class="skill-name">Python</span>
+                <span class="skill-badge mono">Primary</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">SQL</span>
+                <span class="skill-badge mono">Relational</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-badge mono">RDBMS</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">SQLite</span>
+                <span class="skill-badge mono">Embedded</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">HTML5 / CSS3</span>
+                <span class="skill-badge mono">Frontend</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-badge mono">Basic / DOM</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 4. Cloud AI & DevOps -->
+          <div class="stack-group-card glass-panel" data-category="cloud">
+            <div class="stack-group-header">
+              <div class="group-icon text-cyan">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </div>
+              <div>
+                <h3 class="stack-group-title">Cloud AI &amp; DevOps</h3>
+                <span class="stack-group-sub mono">Certified Foundations</span>
+              </div>
+            </div>
+            <ul class="skills-tag-list">
+              <li class="skill-item highlighted">
+                <span class="skill-name">Microsoft Azure</span>
+                <span class="skill-badge mono">AI-900 &bull; AZ-900</span>
+              </li>
+              <li class="skill-item highlighted">
+                <span class="skill-name">Oracle Cloud Infrastructure</span>
+                <span class="skill-badge mono">OCI 2023 Architect</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Git</span>
+                <span class="skill-badge mono">VCS</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">GitHub</span>
+                <span class="skill-badge mono">CI/CD &bull; Repos</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Claude API Integration</span>
+                <span class="skill-badge mono">Anthropic</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 5. Analytics & Automation -->
+          <div class="stack-group-card glass-panel" data-category="analytics">
+            <div class="stack-group-header">
+              <div class="group-icon text-amber">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <div>
+                <h3 class="stack-group-title">Analytics &amp; Automation</h3>
+                <span class="stack-group-sub mono">BI &amp; Enterprise Tooling</span>
+              </div>
+            </div>
+            <ul class="skills-tag-list">
+              <li class="skill-item highlighted">
+                <span class="skill-name">Automation Anywhere</span>
+                <span class="skill-badge mono">Certified Essentials</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Power BI</span>
+                <span class="skill-badge mono">Dashboards</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Excel (Advanced)</span>
+                <span class="skill-badge mono">Formulas &bull; Modeling</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Google Data Studio</span>
+                <span class="skill-badge mono">Reporting</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Web Scraping</span>
+                <span class="skill-badge mono">Data Mining</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">REST APIs</span>
+                <span class="skill-badge mono">Integration</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS ==================== -->
+    <section id="certifications" class="section-container bg-surface-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker mono">04 // VALIDATED EXPERTISE</span>
+          <h2 class="section-heading">Industry Certifications</h2>
+          <p class="section-subtext">Rigorous third-party certifications across Microsoft Azure, Oracle Cloud Infrastructure, and Enterprise Automation.</p>
+        </div>
+
+        <div class="cert-grid">
+          
+          <!-- Cert 1: Azure AI-900 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-header">
+              <div class="cert-icon-wrap azure-theme">
+                <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/><circle cx="12" cy="12" r="2"/></svg>
+              </div>
+              <span class="cert-code mono">AI-900</span>
+            </div>
+            <div class="cert-body">
+              <div class="cert-issuer mono text-cyan">MICROSOFT CERTIFIED</div>
+              <h3 class="cert-name">Azure AI Fundamentals</h3>
+              <p class="cert-desc">
+                Validates foundational knowledge of machine learning, computer vision, natural language processing workloads, and conversational AI services on Microsoft Azure.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-verified-pill mono">
+                <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                VERIFIED CREDENTIAL
+              </span>
+            </div>
+          </div>
+
+          <!-- Cert 2: Azure AZ-900 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-header">
+              <div class="cert-icon-wrap azure-theme">
+                <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </div>
+              <span class="cert-code mono">AZ-900</span>
+            </div>
+            <div class="cert-body">
+              <div class="cert-issuer mono text-cyan">MICROSOFT CERTIFIED</div>
+              <h3 class="cert-name">Azure Fundamentals</h3>
+              <p class="cert-desc">
+                Demonstrates core cloud concepts, Azure architecture components, cloud computing services, governance, security, and global privacy compliance.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-verified-pill mono">
+                <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                VERIFIED CREDENTIAL
+              </span>
+            </div>
+          </div>
+
+          <!-- Cert 3: Oracle OCI 2023 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-header">
+              <div class="cert-icon-wrap oracle-theme">
+                <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+              <span class="cert-code mono">OCI-2023</span>
+            </div>
+            <div class="cert-body">
+              <div class="cert-issuer mono text-red-400">ORACLE UNIVERSITY</div>
+              <h3 class="cert-name">Oracle Cloud Infrastructure 2023 Certified Architect Associate</h3>
+              <p class="cert-desc">
+                Validates hands-on ability to architect resilient cloud infrastructure, configure virtual cloud networks (VCN), identity management, compute instances, and storage strategies.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-verified-pill mono">
+                <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                VERIFIED CREDENTIAL
+              </span>
+            </div>
+          </div>
+
+          <!-- Cert 4: Automation Anywhere -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-header">
+              <div class="cert-icon-wrap aa-theme">
+                <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <span class="cert-code mono">RPA-ESS</span>
+            </div>
+            <div class="cert-body">
+              <div class="cert-issuer mono text-amber">AUTOMATION ANYWHERE</div>
+              <h3 class="cert-name">Certified Essentials Automation Professional</h3>
+              <p class="cert-desc">
+                Validates competencies in Robotic Process Automation (RPA), workflow orchestration, bot building, and enterprise integration patterns.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-verified-pill mono">
+                <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                VERIFIED CREDENTIAL
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ENGINEERING EXPERIENCE & EDUCATION ==================== -->
+    <section id="experience" class="section-container">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker mono">05 // CAREER &amp; ACADEMICS</span>
+          <h2 class="section-heading">Engineering Experience &amp; Education</h2>
+          <p class="section-subtext">Track record in software engineering delivery and academic excellence in computer science.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Experience Item -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-meta">
+                <span class="role-pill mono text-cyan">PROFESSIONAL EXPERIENCE</span>
+                <span class="time-range mono">May 2022 &ndash; Jun 2022</span>
+              </div>
+              <h3 class="timeline-title">Frontend Developer Intern</h3>
+              <div class="timeline-org text-slate-300">
+                <span class="org-name">Scalify India Private Limited</span> &bull; 
+                <span class="org-loc">Hyderabad, India</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>
+                  <strong class="text-slate-100">Responsive UI Delivery:</strong> Engineered clean, responsive UI screens utilizing semantic HTML5 and modern CSS3 across <strong>3+ shipped client-facing features</strong>, ensuring cross-browser stability.
+                </li>
+                <li>
+                  <strong class="text-slate-100">REST API Integration:</strong> Seamlessly connected client components with backend REST API endpoints, <strong>reducing frontend-backend integration turnaround time by ~20%</strong>.
+                </li>
+                <li>
+                  <strong class="text-slate-100">Component Standardization:</strong> Standardized reusable component hierarchies, establishing modular style paradigms that streamlined team-wide maintenance and accelerated subsequent sprint velocities.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tech-chip-sm">HTML5</span>
+                <span class="tech-chip-sm">CSS3</span>
+                <span class="tech-chip-sm">JavaScript</span>
+                <span class="tech-chip-sm">REST APIs</span>
+                <span class="tech-chip-sm">UI Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Item -->
+          <div class="timeline-item">
+            <div class="timeline-dot dot-academic"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-meta">
+                <span class="role-pill mono text-emerald">ACADEMIC FOUNDATION</span>
+                <span class="time-range mono">Nov 2020 &ndash; May 2024</span>
+              </div>
+              <h3 class="timeline-title">B.Tech in Computer Science &amp; Engineering</h3>
+              <div class="timeline-org text-slate-300">
+                <span class="org-name">KL University</span> &bull; 
+                <span class="org-loc">Guntur, Andhra Pradesh, India</span>
+              </div>
+              
+              <div class="gpa-banner">
+                <span class="gpa-score mono text-emerald">CGPA: 7.86 / 10</span>
+                <span class="gpa-specialization mono">&bull; Specialization: Cloud Computing</span>
+              </div>
+
+              <div class="coursework-box mt-3">
+                <div class="mono text-xs text-slate-400 mb-2">// KEY COURSEWORK &amp; RIGOR:</div>
+                <div class="course-pills">
+                  <span class="course-pill">Machine Learning</span>
+                  <span class="course-pill">Data Structures &amp; Algorithms</span>
+                  <span class="course-pill">Database Management Systems (DBMS)</span>
+                  <span class="course-pill">Cloud Architecture &amp; Virtualization</span>
+                  <span class="course-pill">Computer Networks</span>
+                  <span class="course-pill">Operating Systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section-container bg-surface-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker mono">06 // DIRECT REACH</span>
+          <h2 class="section-heading">Get in Touch</h2>
+          <p class="section-subtext">Currently evaluating AI &amp; Machine Learning Engineer opportunities in Hyderabad, India and remote. Let's discuss how my RAG and Deep Learning skill set can accelerate your team's initiatives.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Detail Cards with 1-Click Copy Buttons -->
+          <div class="contact-info-col">
+            
+            <!-- Email Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon text-cyan">
+                <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label mono">EMAIL ADDRESS</span>
+                <a href="mailto:chunduriuday92@gmail.com" class="contact-card-value font-mono" id="email-text">chunduriuday92@gmail.com</a>
+              </div>
+              <div class="contact-card-actions">
+                <button class="btn-copy" data-copy="chunduriuday92@gmail.com" title="Copy Email to Clipboard" aria-label="Copy Email Address">
+                  <svg class="icon icon-sm copy-default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span class="copy-text">Copy</span>
+                </button>
+                <a href="mailto:chunduriuday92@gmail.com" class="btn-icon-link" title="Open Mail Client" aria-label="Open Mail Client">
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon text-emerald">
+                <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label mono">PHONE &bull; HYDERABAD, INDIA</span>
+                <a href="tel:+919032018585" class="contact-card-value font-mono" id="phone-text">+91 9032018585</a>
+              </div>
+              <div class="contact-card-actions">
+                <button class="btn-copy" data-copy="+919032018585" title="Copy Phone to Clipboard" aria-label="Copy Phone Number">
+                  <svg class="icon icon-sm copy-default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span class="copy-text">Copy</span>
+                </button>
+                <a href="tel:+919032018585" class="btn-icon-link" title="Call directly" aria-label="Call Phone Number">
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon text-indigo">
+                <svg class="icon icon-md" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label mono">LINKEDIN PROFESSIONAL NETWORK</span>
+                <span class="contact-card-value font-mono">linkedin.com/in/uday-chunduri-701801215</span>
+              </div>
+              <div class="contact-card-actions">
+                <a href="https://linkedin.com/in/uday-chunduri-701801215" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="Visit LinkedIn Profile">
+                  <span>Connect</span>
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Location Badge -->
+            <div class="location-badge glass-panel">
+              <svg class="icon icon-sm text-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span class="mono text-sm">Base Location: <strong>Hyderabad, Telangana, India</strong> &bull; Open to Onsite / Hybrid / Remote</span>
+            </div>
+
+          </div>
+
+          <!-- Quick Interactive Contact Form -->
+          <div class="contact-form-col">
+            <div class="form-container glass-panel">
+              <h3 class="form-title">
+                <span class="mono text-cyan">// DISPATCH MESSAGE</span>
+                <span>Send a Direct Inquiry</span>
+              </h3>
+              <p class="text-sm text-slate-400 mb-4">
+                Have a specific project or engineering opening? Send a message directly or email <a href="mailto:chunduriuday92@gmail.com" class="text-cyan underline">chunduriuday92@gmail.com</a>.
+              </p>
+
+              <form id="contact-form" class="inquiry-form" onsubmit="return false;">
+                <div class="form-group">
+                  <label for="sender-name" class="form-label mono">YOUR NAME *</label>
+                  <input type="text" id="sender-name" class="form-input" placeholder="e.g. Sarah Jenkins (Lead ML Architect)" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-email" class="form-label mono">YOUR EMAIL *</label>
+                  <input type="email" id="sender-email" class="form-input" placeholder="e.g. s.jenkins@company.ai" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-subject" class="form-label mono">INQUIRY SUBJECT</label>
+                  <input type="text" id="sender-subject" class="form-input" placeholder="e.g. AI/ML Engineering Role / Discussion">
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-msg" class="form-label mono">MESSAGE CONTENT *</label>
+                  <textarea id="sender-msg" class="form-textarea" rows="4" placeholder="Brief outline of the role, requirements, or conversation topic..." required></textarea>
+                </div>
+
+                <button type="submit" id="form-submit-btn" class="btn btn-primary w-full">
+                  <span>Send Message</span>
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+                <div id="form-status" class="form-status mono text-xs mt-2" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="footer-logo mono">
+          <span class="text-cyan">&lt;</span>uday.ai<span class="text-cyan">/&gt;</span>
+        </div>
+        <p class="footer-copy text-sm text-slate-400">
+          &copy; <span id="current-year"></span> Uday Chunduri. Designed with a research-and-engineering aesthetic.
+        </p>
+      </div>
+
+      <div class="footer-center mono text-xs text-slate-500">
+        <span>B.Tech CSE &bull; KL University (2020&ndash;2024) &bull; Hyderabad, India</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top mono" aria-label="Back to top of page">
+          <span>Top</span>
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for 1-Click Copy Feedback -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-content mono">
+      <svg class="icon icon-sm text-emerald" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+      <span id="toast-message">Copied to clipboard!</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
